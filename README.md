@@ -18,3 +18,5 @@ Desenvolver uma aplicação utilizando o conhecimento adquirido na disciplina pa
 ## Protótipos
 
 ## Comandos
+
+## Instalação
