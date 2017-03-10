@@ -10,7 +10,10 @@ Desenvolver uma aplicação utilizando o conhecimento adquirido na disciplina pa
 
 ## Inspiração
 
-![Tela de Adição de Rota](img/paginaAdicionRota.jpg "Tela de Adição de Rota")
+... na **Figura 1**
+
+*Figura 1 - Tela de Adição de Rota*
+![Tela de Adição de Rota](img/paginaAdicaoRota.jpg "Tela de Adição de Rota")
 
 ## Protótipos
 
