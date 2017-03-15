@@ -19,4 +19,16 @@ Desenvolver uma aplicação utilizando o conhecimento adquirido na disciplina pa
 
 ## Comandos
 
+#### Ativar encaminhamento
+>  echo "1" > /proc/sys/net/ipv4/ip_forward
+
+### Visualizar tabela de rotas
+> route -n
+
+### Adicionar uma rota
+> route add -net {$network} netmask {$netmask} gw {$gateway} dev {$interface}
+
+### Apagar uma rota
+> route del -net {$network} netmask {$netmask} gw {$gateway} dev {$interface}
+
 ## Instalação
