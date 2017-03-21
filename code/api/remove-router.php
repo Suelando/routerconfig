@@ -6,7 +6,7 @@
   $interface = $_GET['interface'] ?? null;
 
   $command = "sudo route del -net $address mask $mask gw $gateway";
-  routeRemoveCommand = sshCommand($command);
+  $routeRemoveCommand = sshCommand($command);
   $response = [];
 
   if (empty($routeRemoveCommand[errorStream])){
