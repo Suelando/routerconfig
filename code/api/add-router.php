@@ -7,6 +7,7 @@
   $interface = $_GET['interface'] ?? null;
 
   $command = "sudo route add -net $address netmask $mask gw $gateway";
+
   $routeAddOut = sshCommand($command);
 
   $response = [];
