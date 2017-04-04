@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="br">
+  <html>
+	  <head>
+		  <style>
+	@font-face {/*for títulos*/
+			font-family: default_font;
+				src: url(KeepCalm-Medium.ttf);
+				font-weight: bold;
+	}
+	@font-face {/*for campos*/
+			font-family:default_font2;
+			src: url(Fineness-Bold.ttf);
+	}
+	@font-face {/*for body*/
+			font-family: default_font3;
+				src: url(KeepCalm-Medium.ttf);
+	}
+	body{
+		font-family: "default_font3",sans-serif;
+		color:#000000;
+	}
+	h2{
+		font-family: default_font2,sans-serif;
+		color:red;
+	}
+	#titleSistemaRoteamento{
+		font-family: default_font2,sans-serif;
+		margin-left:1%;
+		color:#000000;
+	}
+	#titleTabelasRotas{
+		font-family: default_font2,sans-serif;
+		margin-top: 10%;
+		color:#000000;
+	}
+	/*1ºFundo na cor laranja*/
+	#primeiroFundo{
+		background-color: #FF8C00;
+		/*height:100vh;/*altura*/*/
+		/*width:100%;/*largura*/*/
+		/*margin:0;*/
+		/*padding:0;*/
+	}
+	/*2ºFundo na cor cinza escuro*/
+	#segundoFundo{
+		background-color: #D3D3D3;
+		height:95vh;/*altura*/
+		width: 99%;/*largura*/
+		margin-top:20%;
+		margin:0 auto;
+	}
+	/*DIV de autenticacao; branco*/
+	#autenticacao{
+		text-align:center;
+		background-color: #FFFAFA;
+		height:400px;/*altura*/
+		width: 800px;/*largura*/
+		margin: 0 auto;
+		/*margin-left: 25%;*/
+		margin-top: 10vh;
+		border-radius:15px;
+	}
+	#botaoAdicionar{
+		width: 100px;
+		height: 40px;
+		margin-left:40%;
+		margin-top:40px;
+	}
+	#botaoRemover{
+		width: 100px;
+		height: 40px;
+		margin-left:30%;
+		margin-bottom:5px;
+	}
+	#botaoReboot{
+		width: 100px;
+		height: 40px;
+		margin-left: 30%;
+	}
+	#ipRede{
+		margin-top:20%;
+		width: 200px; /*largura(essas medidas está trocadas)*/
+		height: 25px;/*altura(essas medidas está trocadas)*/
+	}
+	#ipMask{
+		margin-top:20%;
+		width: 200px; /*largura(essas medidas está trocadas)*/
+		height: 25px;/*altura(essas medidas está trocadas)*/
+	}
+	#ipGateway{
+		margin-top:5%;
+		width: 200px; /*largura(essas medidas está trocadas)*/
+		height: 25px;/*altura(essas medidas está trocadas)*/
+	}
+	#linhahr{
+		width: 90%;
+	}
+	form{
+		width: 200px; /*largura(essas medidas está trocadas)*/
+		height: 25px;/*altura(essas medidas está trocadas)*/
+	}
+	#botaoLista{
+		margin-right:50px;
+	}
+	#idiomaBrazil{
+		width: 30px; /*largura(essas medidas está trocadas)*/
+		height: 20px;/*altura(essas medidas está trocadas)*/
+	}
+	#idiomaEnglish{
+		width: 30px; /*largura(essas medidas está trocadas)*/
+		height: 20px;/*altura(essas medidas está trocadas)*/
+	}
+	#idiomaFinland{
+		width: 30px; /*largura(essas medidas está trocadas)*/
+		height: 20px;/*altura(essas medidas está trocadas)*/
+	}
+	</style>
+		<meta charset="UTF-8">
+		<title>Router Config</title>
+		<link rel="shortcut icon" href="favicon.png" type="image/x-png" title="logo portal"/>
+		<meta name="description" content="Portal do Aluno"/>
+		<meta name="keywords" content="login,acesso,roteamento,senha,usuario"/>
+		<meta name="author" content="Higor Souza"/>
+		</head>
+	  <body id="primeiroFundo"><!--FUNDO DA PÁGINA-->
+			<section id="segundoFundo">
+				<h2 id="titleSistemaRoteamento">Olá, </h2>
+					<div id="autenticacao">
+						<h2 id="titleTabelasRotas">Tabla Sistema Rote</h2>
+						<form>
+						Rede<br><input type=text id="ipRede" placeholder='192.168.10.0'><br>
+						Máscara<br><input type=text id="ipMask" placeholder='255.255.255.255'><br>
+						Gateway<br><input type=text id="ipGateway" placeholder='192.168.11.255'><br>
+						</form>
+						<select id="botaoLista" name="diaDePagamento" size="4">
+							<optgroup label="Users">
+								<option value="Logout" id="opLogout">Logout</option>
+								<option value="Sair" id="opSair">Sair</option>
+							<optgroup label="System">
+								<option value="Histórico" id="opHistórico">Histórico</option><a href="file:///Users/admin/Documents/higor/formulario2">Histórico</a>
+								<option value="Sobre" id="opSobre">Sobre</option>
+								<option value="Version" id="opVersion">Version</option>
+						</select>
+					</div>
+					<input type=image id="botaoAdicionar" name="adicionar" src="/home/rogih/Documents/tecnologia_redes_computadores/p5/dw/projeto/img/adicionarLar.png">
+					<input type=image id="botaoRemover" name="remover" src="/home/rogih/Documents/tecnologia_redes_computadores/p5/dw/projeto/img/removerLar.png">
+					<input type=image id="botaoReboot" name="reboot" src="/home/rogih/Documents/tecnologia_redes_computadores/p5/dw/projeto/img/rebootLar.png">
+					<a href="/home/rogih/Documents/tecnologia_redes_computadores/p5/dw/projeto/main.html" ><img id="idiomaBrazil" src="/home/rogih/Documents/tecnologia_redes_computadores/p5/dw/projeto/img/brasil.png"></a>
+					<a href="/home/rogih/Documents/tecnologia_redes_computadores/p5/dw/projeto/main_in.html" ><img id="idiomaEnglish" src="/home/rogih/Documents/tecnologia_redes_computadores/p5/dw/projeto/img/eua.jpg"></a>
+					<a href="/home/rogih/Documents/tecnologia_redes_computadores/p5/dw/projeto/main_fi.html" ><img id="idiomaFinland" src="/home/rogih/Documents/tecnologia_redes_computadores/p5/dw/projeto/img/finlandia.png"></a>
+			</section>
+	  </body>
+  </html>
