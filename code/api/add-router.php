@@ -1,18 +1,15 @@
 <?php
   require 'util.php';
 
-  $address = "192.168.16.0";//$_GET['address'] ?? null;
-  $mask = "255.255.255.0";//$_GET['mask'] ?? null;
-  $gateway = "10.0.2.2";//$_GET['gateway'] ?? null;
-  $interface = "enp0s3";//$_GET['interface'] ?? null;
+  $address = $_GET['addressValue'] ?? null;
+  $mask = $_GET['maskValue'] ?? null;
+  $gateway = $_GET['gwValue'] ?? null;
 
-  $command = "sudo route add -net $address netmask $mask gw $gateway";
+  $command = "sudo route add -net $addressValue netmask $maskValue gw $gwValue";
 
   $routeAddOut = sshCommand($command);
 
   $response = [];
-
-  // var_dump($routeAddOut);
 
   if(empty($routeAddOut['errorStream'])){
     $response = ['ok' => 'Rota add'];

@@ -18,8 +18,7 @@ foreach ($matches[1] as $key => $value) {
     'address' => $matches[1][$key],
     'gateway' => $matches[2][$key],
     'mask' => $matches[3][$key],
-    'interface' => $matches[8][$key]
-  ];
+    ];
   $routes[] = $route;
 }
 
