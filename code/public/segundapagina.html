@@ -54,7 +54,7 @@ table, th, td, tr {
 th {
   background-color: #ffbc00;
 }
-#table {
+#tableRoute {
   align-items: center;
   text-align: center;
   border-color: black;
@@ -65,13 +65,14 @@ th {
 </style>
 <body>
   <body id="primeiroFundo"><!--FUNDO DA PÁGINA-->
-    <h2 id="titleSistemaRoteamento" margin-left="3%">Olá, {$user}</h2>
+    <h2 id="titleSistemaRoteamento">Olá, {$user}</h2>
     <fieldset id="segundoFundo">
       <div id="autenticacao">
           <fieldset>
-            <table>
-              <thead id="table">
-                <h2>Tabela de Roteamento</h2>
+            <header>
+              <h1>Tabela de Roteamento</h1>
+            </header
+            <table id="tableRoute">
                 <tr>
                   <th>
                   Rede
@@ -84,14 +85,11 @@ th {
                   </th>
                 <tr>
                   <td>
-                    192.168.1.0
-                  </td>
+                    </td>
                   <td>
-                     255.255.255.0
-                  </td>
+                    </td>
                   <td>
-                     192.168.1.2
-                  </td>
+                    </td>
                  </tr>
                 </tr>
               </thead>
