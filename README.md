@@ -49,3 +49,5 @@ Colocando estes serviços em funcionamento com todos os artefatos disponibilizad
 Copiar o conteúdo da pasta **code** para **/var/www/html/**
 
 Adicionar um IP para que o serviço possa ser acessado remotamente.
+
+No navegador web, digitar **Ip_da_máquina:8080//public/login.php**.
