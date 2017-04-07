@@ -1,5 +1,7 @@
 # RouterConfig
 
+> Equipe: Suelando Alves e Higor Souza
+
 ## Descrição
 
 Aplicação desenvolvida para auxiliar analistas de redes em suas atividades de configuração e monitoramento de rotas. Através de uma aplicação web será possível obter uma aplicação servidora que ofereça suporte até para profissionais com pouco conhecimento téorico.
@@ -12,17 +14,19 @@ Desenvolver uma aplicação utilizando o conhecimento adquirido na disciplina pa
 
 A dificuldade em configurar uma rota em ambientes linux, estimula a desenvoler uma aplicação que torne mais fácil o aprendizado deste assunto nos cursos de redes de computadores. 
 
-... na **Figura 1**
+Com base nessa informação, nos baseamos página de adição de rotas obtida de um roteador TP-Link, como mostra a **Figura 1**.
 
-*Figura 1 - Tela de Adição de Rota*
-![Tela de Adição de Rota](doc/img/paginaAdicaoRota.jpg "Tela de Adição de Rota")
+*Figura 1 - Tela de Adição de Rota do TP-Link*
+![Tela de Adição de Rota TP-Link](doc/img/CapturaTpLink.png "Tela de Adição de Rota TP-LInk")
 
 ## Protótipos
+*Figura 2 - Tela de login de usuário*
+![Tela de login de usuário](doc/img/Login.png)
 
-*Figura 2 - Tela com tabela de Monitoramento*
-![Tela com tabela de Monitoramento](doc/img/pagina1.jpg "Tela de Adição de Rota")
+*Figura 3 - Tela com tabela de Monitoramento*
+![Tela com tabela de Monitoramento](doc/img/paginaAdicaoRota.png "Tela de Adição de Rota")
 
-## Comandos
+## Comandos utilizados
 
 #### Ativar encaminhamento
 >  echo "1" > /proc/sys/net/ipv4/ip_forward
@@ -39,4 +43,9 @@ A dificuldade em configurar uma rota em ambientes linux, estimula a desenvoler u
 ## Instalação
 
 Para o funcionamento desta aplicação será necessário um ambiente computacional com servidor web(apache) e banco de dados(MySQL).
-Colocando estes serviços funcionando com todos os artefatos disponibilizados será possível obter o ambiente para qual foi desenvolvido.
+Colocando estes serviços em funcionamento com todos os artefatos disponibilizados será possível obter o ambiente para qual foi desenvolvido. Em seguida, deverá fazer o download do diretório RouterConfig/ no link:
+> ##### http://github.com/suelando/routerconfig
+
+Copiar o conteúdo da pasta **code** para **/var/www/html/**
+
+Adicionar um IP para que o serviço possa ser acessado remotamente.
